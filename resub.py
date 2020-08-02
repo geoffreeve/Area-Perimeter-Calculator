@@ -58,6 +58,7 @@ def calculate(shape, cont, shape_arr=[], area_arr=[], perimeter_arr=[]):
             print("{} Perimeter = {:.2f}".format(history[0][i], history[2][i]))
             print("----------------")
             i += 1
+        input()
         exit()
     if shape == "square":
         side_1 = check("\nEnter first Square Side: ", "yes", "no")
