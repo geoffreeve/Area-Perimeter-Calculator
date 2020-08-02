@@ -107,13 +107,12 @@ valid = False
 while not valid:
     # Asking user to select a shape
     
-    print("\nPlease select a shape.")
     print("Shapes - Circle, Rectangle, Square, Rhombus, Parallelogram\n")
-    shape = check("Choose a shape. ", "no", "no")
+    shape = check("Select a shape. ", "no", "no")
     # Taking that shape and asking for units, then printing area & perimeter.
     calculate(shape, "no")
     # After printing calculations, ask user if they want to continue or not
     # If not then print history in calculate function.
-    cont = check("Enter any number to continue or 2 to exit", "no", "yes")
+    cont = check("Enter any number to continue or 2 to exit ", "no", "yes")
     if cont == 2:
         calculate(shape, "yes")
